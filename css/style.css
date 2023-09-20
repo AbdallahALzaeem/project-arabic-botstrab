@@ -1,0 +1,184 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@400;700;900&family=Oswald:wght@200;300;400&family=PT+Sans:ital@0;1&family=Varela+Round&display=swap');
+
+:root{
+    --maincolor:#ffc527;
+}
+
+body{
+    direction: rtl;
+    font-family: "cairo" , sans-serif;
+    text-align: right;
+}
+
+ul{
+    margin:0 ;
+    padding: 0;
+}
+section{
+    padding: 80px 0;
+}
+.section{
+    padding: 80px 0;
+}
+.section__title{
+    position: relative;
+    display: inline-block;
+}
+.section__title::after{
+    content: "";
+    display: block;
+    width: 120px;
+    height: 5px;
+    background-color:var(--maincolor) ;
+    position: absolute;
+    bottom: -10px;
+}
+
+
+.navbar{
+    box-shadow: 1px 2px 5px #ebebeb;
+}
+.home{
+    height: 600px;
+    background-size: cover;
+    background-image: url(../images/slide-bg-1.jpg);
+    padding: 1px;
+}
+.home-item{
+    width: 50%;
+    margin-right: auto;
+    margin-top: 15%;
+}
+@media(max-width:768){
+    .home-item{
+        width: 100%;
+    }
+    .home{
+        height: 400px;
+    }
+}
+.home-item h2{
+    color: #fff;
+    font-size: 45px;
+}
+.home-item p{
+    color: #fff;
+    font-size: 25px;
+}
+.about__item{
+    margin: 50px 0;
+}
+.about__item button{
+    margin-bottom: 15px;
+}
+
+
+
+
+
+
+.news .news-left ,.footer-left{
+    display: flex;
+    align-items: center;
+    margin-top: 15px;
+}
+
+.news .news-left img ,.footer-left img{
+    max-width: 200px;
+    margin-left: 20px;
+}
+
+
+
+
+.subscribe{
+    height: 450px;
+    background-image: url(../images/subscribe.jpg);
+    position: relative;
+    background-size: cover;
+    padding: 1px;
+    text-align: center;
+  
+}
+ .subscribe__item{
+    width: 50%;
+    margin: 100px auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    color: #fff;
+ }
+ .subscribe__item h2{
+    font-size: 40px;
+ }
+ .subscribe__item .form{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+ }
+ .subscribe__item .form input{
+    width: 80%;
+ }
+ .subscribe__item .form button{
+    width: 15%;
+ } 
+ @media (max-width:768) {
+    .subscribe__item{
+        width: 80%;
+    }
+    .subscribe__item .form{
+        flex-direction: column;
+    }
+    .subscribe__item .form input , .subscribe__item .form button{
+        width: 100%;
+    }
+ }
+
+ 
+
+ footer{
+    background-color: #071c33;
+    color: #fff;
+ }
+ footer h3{
+    background-color: #fff;
+    color: #222;
+    display: inline-block;
+    font-size: 16px;
+    margin: 0 0 10px;
+    padding: 10px 20px;
+    text-transform: uppercase;
+ }
+ 
+
+ .footer-left{
+    font-size: 12px;
+ }
+ .footer-left img{
+   width: 50px;
+ }
+
+
+ .breadcrumb-item+.breadcrumb-item::before {
+    float: right;
+ }
+ .breadcrumb{
+    margin: 0;
+    justify-content: flex-end;
+ }
+ .blog .jumbotron{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 2px solid var(--maincolor);
+ }
+ .blog .jumbotron .blog-desc{
+    width: 55%;
+ }
+ .blog .jumbotron .blog-desc h4{
+    font-size: 18px;
+ }
+ .blog .jumbotron .blog-img{
+    width: 45%;
+ }
